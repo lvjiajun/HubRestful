@@ -1,0 +1,178 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "D:\\HubRestful\\HubRestful\\HubRestful.csproj",
+    "projectName": "HubRestful",
+    "projectPath": "D:\\HubRestful\\HubRestful\\HubRestful.csproj",
+    "outputPath": "D:\\HubRestful\\HubRestful\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net50"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp5.0": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp5.0": {
+      "dependencies": {
+        "Autofac": {
+          "target": "Package",
+          "version": "[6.1.0, )"
+        },
+        "Autofac.Extensions.DependencyInjection": {
+          "target": "Package",
+          "version": "[7.1.0, )"
+        },
+        "DotNetty.Buffers": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "DotNetty.Codecs": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "DotNetty.Common": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "DotNetty.Handlers": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "DotNetty.Transport": {
+          "target": "Package",
+          "version": "[0.6.0, )"
+        },
+        "Microsoft.AspNetCore.Authentication.JwtBearer": {
+          "target": "Package",
+          "version": "[5.0.0, )",
+          "noWarn": [
+            "NU1605"
+          ]
+        },
+        "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+          "target": "Package",
+          "version": "[5.0.0, )",
+          "noWarn": [
+            "NU1605"
+          ]
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[5.0.1, )"
+        },
+        "Microsoft.Extensions.Caching.Memory": {
+          "target": "Package",
+          "version": "[5.0.0, )"
+        },
+        "Microsoft.Extensions.DependencyInjection": {
+          "target": "Package",
+          "version": "[5.0.1, )"
+        },
+        "Microsoft.Extensions.Logging": {
+          "target": "Package",
+          "version": "[5.0.0, )"
+        },
+        "Microsoft.Extensions.PlatformAbstractions": {
+          "target": "Package",
+          "version": "[1.1.0, )"
+        },
+        "Microsoft.OpenApi": {
+          "target": "Package",
+          "version": "[1.2.3, )"
+        },
+        "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+          "target": "Package",
+          "version": "[1.10.9, )"
+        },
+        "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "target": "Package",
+          "version": "[5.0.1, )"
+        },
+        "MongoDB.Driver": {
+          "target": "Package",
+          "version": "[2.11.5, )"
+        },
+        "MySql.Data.EntityFramework": {
+          "target": "Package",
+          "version": "[8.0.22, )"
+        },
+        "NLog": {
+          "target": "Package",
+          "version": "[4.7.6, )"
+        },
+        "NLog.Web.AspNetCore": {
+          "target": "Package",
+          "version": "[4.9.3, )"
+        },
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[12.0.3, )"
+        },
+        "OPCFoundation.NetStandard.Opc.Ua": {
+          "target": "Package",
+          "version": "[1.4.364.40, )"
+        },
+        "Quartz": {
+          "target": "Package",
+          "version": "[3.2.3, )"
+        },
+        "Refit": {
+          "target": "Package",
+          "version": "[5.2.4, )"
+        },
+        "S7netplus": {
+          "target": "Package",
+          "version": "[0.7.0, )"
+        },
+        "Serilog": {
+          "target": "Package",
+          "version": "[2.10.1-dev-01265, )"
+        },
+        "Sharp7": {
+          "target": "Package",
+          "version": "[1.1.75, )"
+        },
+        "Swashbuckle.AspNetCore": {
+          "target": "Package",
+          "version": "[5.6.3, )"
+        },
+        "log4net": {
+          "target": "Package",
+          "version": "[2.0.12, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

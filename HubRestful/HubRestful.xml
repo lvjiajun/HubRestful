@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HubRestful</name>
+    </assembly>
+    <members>
+        <member name="M:HubRestful.Controllers.ErrController.GetTime(System.DateTime,System.DateTime)">
+            <summary>
+            查询错误
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.Get">
+            <summary>
+            获取混流线缓存数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.GetTime(System.DateTime,System.DateTime)">
+            <summary>
+            获取混流线扫描历史数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.Get(System.String)">
+            <summary>
+            查询扫描数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.TaskController.Get(System.DateTime,System.DateTime)">
+            <summary>
+            获取MES任务数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HubRestful.Model.ObsloteType">
+            <summary>
+            Cache策略类型  永久/绝对过期/滑动过期
+            </summary>
+        </member>
+        <member name="F:HubRestful.Model.ObsloteType.Never">
+            <summary>
+            永久
+            </summary>
+        </member>
+        <member name="F:HubRestful.Model.ObsloteType.Absolutely">
+            <summary>
+            绝对过期
+            </summary>
+        </member>
+        <member name="F:HubRestful.Model.ObsloteType.Relative">
+            <summary>
+            滑动过期 如果期间查询或更新，就再次延长
+            </summary>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Get``1(System.String)">
+            <summary>
+            读取缓存
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Add``1(System.String,``0,HubRestful.Model.ObsloteType,System.Int32)">
+            <summary>
+            设置缓存
+            </summary>
+            <param name="key"></param>
+            <param name="data"></param>
+            <param name="cachetime"></param>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Contains(System.String)">
+            <summary>
+            是否包含
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Remove(System.String)">
+            <summary>
+            清除缓存
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Upate``1(System.String,``0,HubRestful.Model.ObsloteType,System.Int32)">
+            <summary>
+            更新缓存
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="F:HubRestful.Model.MemoryCacheExtensions._memoryCacheEntryOptions">
+            <summary>
+            缓存配置项
+            </summary>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.Add``1(System.String,``0,HubRestful.Model.ObsloteType,System.Int32)">
+            <summary>
+            添加
+            </summary>
+            <param name="key"></param>
+            <param name="data"></param>
+            <param name="cacheMin"></param>
+            <param name="obsloteType"></param>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.Contains(System.String)">
+            <summary>
+            是否存在
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.GetAll(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存集合
+            </summary>
+            <param name="keys">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.RemoveList(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            批量删除缓存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.GetListKey">
+            <summary>
+            获取所有缓存键
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.GetListValue``1">
+            <summary>
+            获取所有缓存值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.OpcClientServer.Client.OpcuaClientService.OnMonitoredStop(Opc.Ua.Client.MonitoredItem,Opc.Ua.Client.MonitoredItemNotificationEventArgs)">
+            <summary>
+            Handle DataChange notifications from Server
+            </summary>
+        </member>
+        <member name="M:HubRestful.OpcClientServer.Client.OpcuaClientService.OnMonitoredEquals(Opc.Ua.Client.MonitoredItem,Opc.Ua.Client.MonitoredItemNotificationEventArgs)">
+            <summary>
+            Handle DataChange notifications from Server
+            </summary>
+        </member>
+        <member name="M:HubRestful.OpcClientServer.Client.OpcuaClientService.OnMonitoredRequest(Opc.Ua.Client.MonitoredItem,Opc.Ua.Client.MonitoredItemNotificationEventArgs)">
+            <summary>
+            Handle DataChange notifications from Server
+            </summary>
+        </member>
+        <member name="T:HubRestful.RestClient.AutoGeneratedIRestInterface">
+            <inheritdoc />
+        </member>
+        <member name="P:HubRestful.RestClient.AutoGeneratedIRestInterface.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:HubRestful.RestClient.AutoGeneratedIRestInterface.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HubRestful.RestClient.AutoGeneratedIRestInterface.HubRestful#RestClient#IRestInterface#GetTask(System.String,System.String)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

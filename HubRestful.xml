@@ -1,0 +1,477 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HubRestful</name>
+    </assembly>
+    <members>
+        <member name="T:HubRestful.Configure.MongoSetting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HubRestful.Configure.IMongoDataBaseSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HubRestful.Configure.OpcSetting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HubRestful.Configure.OpcSetting.endpointUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HubRestful.Configure.OpcSetting.autoAccept">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HubRestful.Configure.OpcSetting.stopTimeout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HubRestful.Configure.IOpcSetting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HubRestful.Configure.IOpcSetting.endpointUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HubRestful.Configure.IOpcSetting.autoAccept">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HubRestful.Configure.IOpcSetting.stopTimeout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HubRestful.Controllers.ErrController.GetTime(System.DateTime,System.DateTime)">
+            <summary>
+            查询错误
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.OrderController.Get">
+            <summary>
+            查询订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.OrderController.Create(HubRestful.Entity.OrderEntity)">
+            <summary>
+            推送订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.OrderController.Updata(HubRestful.Entity.OrderEntity)">
+            <summary>
+            更新订单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.Get">
+            <summary>
+            获取混流线缓存数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.GetTime">
+            <summary>
+            获取混流线300s数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.GetTime(System.DateTime,System.DateTime)">
+            <summary>
+            获取混流线扫描历史数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.Get(System.String)">
+            <summary>
+            查询扫描数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.Post(HubRestful.Entity.ScanEntity)">
+            <summary>
+            添加扫描数据测试用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.Delete(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除扫描数据测试用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.ScanController.GetAll">
+            <summary>
+            获取混流线扫描所有数据测试用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HubRestful.Controllers.TagController">
+            <summary>
+            Tag标签查询接口
+            </summary>
+        </member>
+        <member name="M:HubRestful.Controllers.TagController.#ctor(HubRestful.Server.TagDataBaseServer,HubRestful.DotNetty.QuoteOfTheMomentClientHandler)">
+            <summary>
+            
+            </summary>
+            <param name="tagDataBaseServer"></param>
+            <param name="quoteOfTheMomentClientHandler"></param>
+        </member>
+        <member name="M:HubRestful.Controllers.TagController.Creat(HubRestful.Entity.TagEntity)">
+            <summary>
+            推送工业板信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.TagController.Get(System.DateTime,System.DateTime)">
+            <summary>
+            时间查询RFID标签数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.TagController.GetList">
+            <summary>
+            查询工装板消息阻塞
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.TagController.Get">
+            <summary>
+            获取一个小时内的数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.TaskController.Get(System.DateTime,System.DateTime)">
+            <summary>
+            获取MES任务数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Controllers.TaskController.GetTime(System.DateTime,System.DateTime)">
+            <summary>
+            模拟MES任务数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HubRestful.DotNetty.QuoteOfTheMomentClientHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HubRestful.DotNetty.QuoteOfTheMomentClientHandler.tagEntities">
+            <summary>
+            阻塞队列
+            </summary>
+        </member>
+        <member name="M:HubRestful.DotNetty.QuoteOfTheMomentClientHandler.#ctor(Microsoft.Extensions.Logging.ILogger{HubRestful.DotNetty.QuoteOfTheMomentClientHandler},HubRestful.Server.TagDataBaseServer)">
+            <summary>
+            Netty接受函数的注入构造函数
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:HubRestful.DotNetty.QuoteOfTheMomentClientHandler.ChannelRead0(DotNetty.Transport.Channels.IChannelHandlerContext,DotNetty.Transport.Channels.Sockets.DatagramPacket)">
+            <summary>
+            接受函数的回调函数
+            </summary>
+            <param name="ctx"></param>
+            <param name="packet"></param>
+        </member>
+        <member name="M:HubRestful.DotNetty.QuoteOfTheMomentClientHandler.ExceptionCaught(DotNetty.Transport.Channels.IChannelHandlerContext,System.Exception)">
+            <summary>
+            UDP接受消息异常
+            </summary>
+            <param name="context"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="T:HubRestful.DotNetty.QuoteUdpStartup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HubRestful.DotNetty.QuoteUdpStartup.#ctor(Microsoft.Extensions.Logging.ILogger{HubRestful.QuartzServer.QuartzStartup},HubRestful.DotNetty.QuoteOfTheMomentClientHandler)">
+            <summary>
+            UDP启动的构造函数
+            </summary>
+            <param name="logger"></param>
+            <param name="quoteOfTheMomentClientHandler"></param>
+        </member>
+        <member name="T:HubRestful.Entity.TagEntity">
+            <summary>
+            Tag标签
+            </summary>
+        </member>
+        <member name="P:HubRestful.Entity.TagEntity.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HubRestful.Entity.TagEntity.LineCode">
+            <summary>
+            工作中心
+            </summary>
+        </member>
+        <member name="P:HubRestful.Entity.TagEntity.WorkUnit">
+            <summary>
+            台站号
+            </summary>
+        </member>
+        <member name="P:HubRestful.Entity.TagEntity.RFIDNum">
+            <summary>
+            遥控器条码
+            </summary>
+        </member>
+        <member name="P:HubRestful.Entity.TagEntity.RFIDCode">
+            <summary>
+            芯片ID
+            </summary>
+        </member>
+        <member name="P:HubRestful.Entity.TagEntity.MesCode">
+            <summary>
+            MES条码	
+            </summary>
+        </member>
+        <member name="P:HubRestful.Entity.TagEntity.BarCode">
+            <summary>
+            机型条码
+            </summary>
+        </member>
+        <member name="P:HubRestful.Entity.TagEntity.ReadTime">
+            <summary>
+            读卡时间
+            </summary>
+        </member>
+        <member name="T:HubRestful.Model.ObsloteType">
+            <summary>
+            Cache策略类型  永久/绝对过期/滑动过期
+            </summary>
+        </member>
+        <member name="F:HubRestful.Model.ObsloteType.Never">
+            <summary>
+            永久
+            </summary>
+        </member>
+        <member name="F:HubRestful.Model.ObsloteType.Absolutely">
+            <summary>
+            绝对过期
+            </summary>
+        </member>
+        <member name="F:HubRestful.Model.ObsloteType.Relative">
+            <summary>
+            滑动过期 如果期间查询或更新，就再次延长
+            </summary>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Get``1(System.String)">
+            <summary>
+            读取缓存
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Add``1(System.String,``0,HubRestful.Model.ObsloteType,System.Int32)">
+            <summary>
+            设置缓存
+            </summary>
+            <param name="key"></param>
+            <param name="data"></param>
+            <param name="cachetime"></param>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Contains(System.String)">
+            <summary>
+            是否包含
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Remove(System.String)">
+            <summary>
+            清除缓存
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:HubRestful.Model.ICache.Upate``1(System.String,``0,HubRestful.Model.ObsloteType,System.Int32)">
+            <summary>
+            更新缓存
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="F:HubRestful.Model.MemoryCacheExtensions._memoryCacheEntryOptions">
+            <summary>
+            缓存配置项
+            </summary>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.Add``1(System.String,``0,HubRestful.Model.ObsloteType,System.Int32)">
+            <summary>
+            添加
+            </summary>
+            <param name="key"></param>
+            <param name="data"></param>
+            <param name="cacheMin"></param>
+            <param name="obsloteType"></param>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.Contains(System.String)">
+            <summary>
+            是否存在
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.GetAll(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存集合
+            </summary>
+            <param name="keys">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.RemoveList(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            批量删除缓存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.GetListKey">
+            <summary>
+            获取所有缓存键
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.Model.MemoryCacheExtensions.GetListValue``1">
+            <summary>
+            获取所有缓存值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubRestful.OpcClientServer.OpcClient.#ctor(HubRestful.Configure.IOpcSetting)">
+            <summary>
+            OPCClient 构造函数
+            </summary>
+            <param name="opcSetting"></param>
+        </member>
+        <member name="M:HubRestful.OpcClientServer.Client.OpcuaClientService.OnMonitoredStop(Opc.Ua.Client.MonitoredItem,Opc.Ua.Client.MonitoredItemNotificationEventArgs)">
+            <summary>
+            Handle DataChange notifications from Server
+            </summary>
+        </member>
+        <member name="M:HubRestful.OpcClientServer.Client.OpcuaClientService.OnMonitoredEquals(Opc.Ua.Client.MonitoredItem,Opc.Ua.Client.MonitoredItemNotificationEventArgs)">
+            <summary>
+            Handle DataChange notifications from Server
+            </summary>
+        </member>
+        <member name="M:HubRestful.OpcClientServer.Client.OpcuaClientService.OnMonitoredRequest(Opc.Ua.Client.MonitoredItem,Opc.Ua.Client.MonitoredItemNotificationEventArgs)">
+            <summary>
+            Handle DataChange notifications from Server
+            </summary>
+        </member>
+        <member name="M:HubRestful.QuartzServer.OpcServerSyncjob.#ctor(Microsoft.Extensions.Logging.ILogger{HubRestful.QuartzServer.OpcServerSyncjob},HubRestful.IS7ConnectFactory)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="s7ConnectFactory"></param>
+        </member>
+        <member name="M:HubRestful.QuartzServer.OpcServerSyncjob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HubRestful.RestClient.AutoGeneratedIRestInterface">
+            <inheritdoc />
+        </member>
+        <member name="P:HubRestful.RestClient.AutoGeneratedIRestInterface.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:HubRestful.RestClient.AutoGeneratedIRestInterface.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HubRestful.RestClient.AutoGeneratedIRestInterface.HubRestful#RestClient#IRestInterface#GetTask(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:HubRestful.IS7ConnectFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HubRestful.IS7ConnectFactory.close">
+            <summary>
+            关闭S7连接
+            </summary>
+        </member>
+        <member name="M:HubRestful.IS7ConnectFactory.GetService">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HubRestful.S7ConnectFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HubRestful.S7ConnectFactory.#ctor(HubRestful.Configure.IS7setting,Microsoft.Extensions.Logging.ILogger{HubRestful.S7ConnectFactory})">
+            <summary>
+            
+            </summary>
+            <param name="setting"></param>
+        </member>
+        <member name="M:HubRestful.S7ConnectFactory.close">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HubRestful.S7ConnectFactory.GetService">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HubRestful.Server.TagDataBaseServer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HubRestful.Server.TagDataBaseServer.#ctor(HubRestful.Configure.IMongoDataBaseSettings,HubRestful.Model.MemoryCacheExtensions)">
+            <summary>
+            tag Server 构造函数
+            </summary>
+            <param name="settings"></param>
+            <param name="memoryCacheExtensions"></param>
+        </member>
+        <member name="P:HubRestful.Startup.Configuration">
+            <summary>
+            配置参数
+            </summary>
+        </member>
+        <member name="M:HubRestful.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            配置服务类
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:HubRestful.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Hosting.IApplicationLifetime)">
+            <summary>
+            配置方法
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="appLifetime"></param>
+        </member>
+    </members>
+</doc>
